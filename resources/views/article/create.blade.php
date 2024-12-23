@@ -1,3 +1,3 @@
 <x-layout>
-    <livewire:create-article-form />
+    <livewire:create-article />
 </x-layout>

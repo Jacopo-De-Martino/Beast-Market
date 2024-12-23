@@ -11,7 +11,7 @@
 
 <body>
     <x-navbar />
-    <main class="min-vh-100 text-light bg-main py-md-0 py-5">
+    <main class="min-vh-100 text-light bg-main ">
         {{ $slot }}
     </main>
     <x-footer />

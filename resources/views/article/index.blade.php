@@ -1,7 +1,7 @@
 <x-layout>
     <section>
-        <div class="container my-4">
-            <div class="row justify-content-center">
+        <div class="container pt-5">
+            <div class="row justify-content-center pt-md-0 pt-5">
                 <!-- Colonna Categorie -->
                 <div class="col-md-3 col-12 mb-md-0 mb-3 text-center">
                     <div class="categories-list">

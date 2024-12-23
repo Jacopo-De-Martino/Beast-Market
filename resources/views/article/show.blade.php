@@ -2,7 +2,7 @@
     <section>
         <div class="container pt-5">
             <!-- Titolo articolo -->
-            <div class="row justify-content-center text-center pt-5 mt-5">
+            <div class="row justify-content-center text-center pt-5 ">
                 <div class="col-12">
                     <h1 class="display-4">Dettaglio dell'articolo: {{ $article->title }}</h1>
                 </div>

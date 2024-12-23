@@ -1,7 +1,7 @@
 <x-layout>
 
-    <div class="container-fluid py-5">
-        <div class="row height-custom justify-content-center align-items-center">
+    <div class="container-fluid pt-5 ">
+        <div class="row height-custom justify-content-center align-items-center pt-md-0 pt-5">
             <!-- Header Categoria -->
             <div class="col-12">
                 <h1 class="category-text text-center">Categoria: {{ $category->name }}</h1>
