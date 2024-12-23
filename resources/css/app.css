@@ -1,0 +1,10 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+@import "@fontsource/roboto-slab";
+@import "@fontsource/roboto-slab/400.css";
+@import "@fontsource/lato";
+@import "@fontsource/lato/400.css";
+@import "@fontsource/playfair-display";
+@import "@fontsource/playfair-display/400.css";
+
+@import "./style.css";

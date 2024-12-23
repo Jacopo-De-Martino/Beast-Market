@@ -1,0 +1,476 @@
+/*!  Style Page */
+*{
+    text-shadow: 3px 3px 1px black,2px 2px 2px black, -2px -2px 1px black,1px 1px 1px black, -1px -1px 1px black;
+}
+
+/** Stili per i titoli */
+h1, h2, h3 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+}
+/** Stili per i sottotitoli */
+h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-style: italic; /** Aggiunge un tocco stilistico se desiderato */
+}
+/** Stili per il logo */
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 24px; /** Adattabile a seconda delle esigenze di design */
+}
+.logo-img-absolute {
+    position: absolute;
+    top: -20px; /* Regola questa distanza per spostare il logo più in alto o più in basso */
+    right: -15px; /* Centra il logo orizzontalmente */
+   
+    z-index: 1000; /* Assicura che il logo sia sopra gli altri elementi */
+    background-color: #202329;
+    border-radius:  0px 0px 0px 55%;
+    padding: 0px;
+}
+
+.logo-img {
+    height: 170px; /* o la dimensione che preferisci */
+    width: auto; /* mantiene le proporzioni del logo */
+}
+/** Stili per i testi generali */
+body, p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+/** Opzionale: Stile per testi in corsivo */
+em, i {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+}
+/** Stili per link o testo speciale */
+
+/** Stili per testo in evidenza */
+strong {
+    font-weight: bold; /** Grassetto per maggiore enfasi */
+}
+/** Stili per bottoni e input */
+button, input[type="submit"] {
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+/*!  Style Navbar */
+/** Imposta il colore di sfondo della navbar */
+.navbar-custom,.header-custom{
+    background-color: #202329;
+}
+
+/** Imposta il colore del testo e il font per i link nella navbar */
+.navbar-custom .navbar-nav .nav-link {
+    color: #fff;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+
+/** Aggiunge l'effetto di sottolineatura al passaggio del mouse sui link della navbar */
+.navbar-custom .navbar-nav .nav-link:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px; /* Imposta lo spessore della sottolineatura */
+    text-underline-offset: 3px; /* Distanza della sottolineatura dal testo */
+}
+
+/** Aggiunge l'effetto active al current page al link della navbar */
+.navbar-custom .navbar-nav .nav-link.active {
+    font-weight: bold; /* Rende il testo del link attivo in grassetto */
+    color: #fc3d4f; /* Usa un colore diverso per evidenziare il link attivo */
+}
+
+/** Stili per la barra di ricerca, configurata per allineare gli elementi internamente */
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+/** Stili per l'input di testo della barra di ricerca */
+.search-box input[type="text"] {
+    border: none; /** Rimuove il bordo */
+    background-color: transparent; /** Rende lo sfondo trasparente */
+    border-bottom: 1px solid #fff; /** Aggiunge un bordo solo in basso di colore bianco */
+    color: #fff; /** Imposta il colore del testo a bianco */
+    margin-right: 10px; /** Aggiunge un margine a destra */
+}
+/**  Custom Toggle Button Style */
+.navbar-custom .navbar-toggler {
+    border-color: rgba(0,0,0,0); /* Rimuove il bordo se presente */
+    box-shadow: none; /* Rimuove l'ombra */
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23FF6347' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/**  Opzionale: Cambia il colore all'hover */
+.navbar-custom .navbar-toggler:hover .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23cc523a' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/** Stili per il placeholder dell'input di testo */
+.search-box input[type="text"]::placeholder {
+    color: #ccc; /** Imposta il colore del placeholder a grigio chiaro */
+}
+
+/** Stili per il pulsante di ricerca nella barra */
+.search-box button {
+    background: none; /** Rende lo sfondo del pulsante trasparente */
+    border: none; /** Rimuove il bordo del pulsante */
+    color: #fff; /** Imposta il colore del testo del pulsante a bianco */
+}
+
+/* ! header */
+header{
+    background-image: url(../../public/header.webp);
+    background-size: cover;
+    background-position: center; 
+    box-shadow: #202329 0px 10px 10px;
+}
+.bg-main{
+    background: linear-gradient(0deg, #202329 0%, #2a292d 50%, #342f31fc 100%);
+
+    box-shadow: #202329 0px 10px 40px;
+}
+
+/* ! footer */
+.footer-custom {
+    background-color: #202329;
+    color: #fff;
+    padding: 20px 0;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.footer-custom h5 {
+    color: #fc3d4f;
+}
+
+.footer-custom ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-custom ul li {
+    padding: 5px 0;
+}
+
+.footer-custom a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-custom a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px; /* Imposta lo spessore della sottolineatura */
+    text-underline-offset: 3px; /* Distanza della sottolineatura dal testo */
+}
+/* ! forms */
+
+.form-custom {
+     /* Darker blue background for the form */
+    padding: 20px;
+}
+
+.input-custom {
+    background-color: #20232997; /* Even darker blue for the input */
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-bottom: 10px; /* Space between inputs */
+    display: block; 
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}   
+.input-custom[type="text"] {
+    color: #ffffff; /* Imposta il colore del testo bianco per gli input email */
+}
+.input-custom[type="text"]::placeholder {
+    color: #ccc; /* Grigio chiaro per il placeholder */
+}
+
+.input-custom[type="email"] {
+    color: #ffffff; /* Imposta il colore del testo bianco per gli input email */
+}
+
+.input-custom[type="password"] {
+    color: #fc3d4f; /* Imposta il colore del testo rosso per gli input password */
+}
+
+/* Assicurati che il placeholder per email sia visibile quando l'input è vuoto */
+.input-custom[type="email"]::placeholder {
+    color: #ccc; /* Grigio chiaro per il placeholder */
+}
+
+/* Assicurati che il placeholder per password sia visibile quando l'input è vuoto */
+.input-custom[type="password"]::placeholder {
+    color: #fc3d4f; /* Rosso per il placeholder, se desideri mantenerlo coerente con il testo */
+}
+
+.input-custom:focus{
+    background-color: #202329;
+}
+.input-custom::placeholder {
+    color: #ccc !important; /* Colore del placeholder grigio chiaro */
+}
+
+.input-custom:-webkit-autofill,
+.input-custom:-webkit-autofill:hover, 
+.input-custom:-webkit-autofill:focus, 
+.input-custom:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s; /* Delays the transition */
+    background-color: #202329 !important; /* Forza il colore dello sfondo */
+    box-shadow: 0 0 0px 1000px #202329 inset; /* Trucco per cambiare lo sfondo */
+}
+
+.button-custom {
+    background-color: #ff3737; /* Red background for button */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    letter-spacing: 1.6px;
+    width: 40%; /* Full width */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: inset -2px -2px 3px rgba(0, 0, 0, 0.845); /* Shadow */
+}
+
+.button-custom:hover {
+    background-color: #ad0011; /* Lighter red background on hover */
+    box-shadow: inset 2px 2px 3px rgb(0, 0, 0); /* Shadow */
+    transform: translateY(2px); /* Slight movement on hover */
+}
+
+.label-custom {
+    font-size: 16px; /* Slightly larger font size for labels */
+    color: white; /* Light grey color */
+}
+
+/* Optional: Add specific media queries if you need responsiveness */
+@media (max-width: 768px) {
+    .form-custom {
+        padding: 10px;
+    }
+}
+@media (max-width: 768px) and (orientation: portrait) {
+    .bg-login {
+        background-image: url('../../public/Login.jpg'); /* Percorso dell'immagine di sfondo per dispositivi mobile */
+        background-size: cover; /* Copre l'intera area del div senza ripetizioni */
+        background-position: center; /* Centra l'immagine di sfondo */
+    }
+}
+/** bg-login */
+.bg-login{
+    background-image: url('../../public/Login.jpg');
+    background-size: cover;
+    background-position: end center;
+}
+
+/** fieldset */
+.fieldset-custom {
+    border: 2px solid #202329; /* Bordo rosso per matchare il bottone */
+    padding: 15px;
+    border-radius: 20px; /* Bordi arrotondati */
+    margin-bottom: 20px; /* Spazio extra sotto il fieldset */
+}
+
+.legend-custom {
+    font-size: 18px; /* Dimensione del testo per il titolo del fieldset */
+    color: white; /* Colore rosso per matchare altri elementi */
+    font-weight: bold; /* Testo in grassetto */
+    padding: 0 10px; /* Padding intorno al testo */
+    width: auto; /* Larghezza automatica basata sul contenuto */
+}
+
+
+.input-custom .is-invalid {
+    border-color: #dc3545 !important; /* Rosso Bootstrap per gli errori */
+}
+
+
+#back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #202329;
+    color: white;
+    border: 1px solid #ad0011;
+    display: none; /* Mantieni il bottone nascosto di default */
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+}
+
+/* ! offcanvas */
+/* Personalizza i link delle categorie */
+.offcanvas a {
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  .offcanvas a:hover {
+    color: #fc3d4f !important; /* Accento rosso per hover */
+  }
+  
+  /* Optional: miglioramento visivo */
+  .offcanvas-header {
+    border-bottom: 1px solid #fc3d4f;
+  }
+  
+/* !card */
+.article-card {
+    background-color: #202329; /* Sfondo scuro */
+    color: #ffffff; /* Testo chiaro */
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .article-card img {
+    border-radius: 8px 0 0 8px; /* Arrotonda solo i bordi a sinistra */
+  }
+  
+  .card-title {
+    font-family: 'Roboto Slab', serif;
+    color: #fc3d4f; /* Accento rosso */
+  }
+  
+  .card-text {
+    font-family: 'Lato', sans-serif;
+    color: #cccccc; /* Grigio chiaro */
+  }
+  
+  .categories-list h2 {
+    font-family: 'Roboto Slab', serif;
+    color: #fc3d4f; /* Colore accento rosso */
+}
+
+.category-item {
+    background-color: #202329;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    border: 1px solid #fc3d4f;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: inset -2px -2px 3px rgba(0, 0, 0, 0.845); /* Shadow */
+}
+
+.category-item:hover {
+    background-color: #fc3d4f;
+    color: #ffffff;
+    border: 1px solid #202329;
+    box-shadow: inset 2px 2px 3px rgb(0, 0, 0); /* Shadow */
+    transform: translateY(2px); /* Slight movement on hover */
+}
+
+/* !paginator */
+/* Stile generale dei pulsanti */
+.page-link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    font-size: var(--bs-pagination-font-size); /* Manteniamo il font-size di default */
+    color: #ffffff; /* Testo bianco */
+    text-decoration: none;
+    background-color: #202329; /* Sfondo scuro */
+    border: 1px solid #fc3d4f; /* Bordo rosso */
+    border-radius: 8px; /* Bordi arrotondati */
+    box-sizing: border-box;
+    min-width: 2.5rem;
+    text-align: center;
+}
+
+/* Aumenta la dimensione delle frecce */
+.page-item .page-link svg {
+    font-size: 1.5rem; /* Aumenta solo la dimensione delle frecce */
+}
+
+/* Stile per il pulsante attivo */
+.page-item.active .page-link {
+    color: #ffffff; /* Testo bianco */
+    background-color: #fc3d4f; /* Sfondo rosso */
+    border-color: #fc3d4f;
+}
+
+/* Stile per il pulsante disabilitato */
+.page-item.disabled .page-link {
+    color: #6c757d; /* Grigio */
+    background-color: #343a40;
+    border-color: #343a40;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+/* Margine tra i pulsanti */
+.page-item:not(:first-child) .page-link {
+    margin-left: 0.5rem;
+}
+
+/* !show */
+.carousel {
+    border-radius: 8px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 400px; /* Imposta un'altezza fissa per tutte le immagini */
+}
+
+/* ! */
+
+/* Per dispositivi sm (300px - 767.98px) */
+@media (min-width: 300px) and (max-width: 767.98px) {
+    .button-custom.w-sm-100 {
+        width: 100% !important;
+    }
+
+    .logo-img-absolute {
+        top: -10px; /* Aggiusta la posizione verticale per sm */
+    }
+
+    .logo-img {
+        max-width: 130px !important;
+        max-height: 130px !important; /* Ridimensiona il logo */
+    }
+    .sm-center{
+        text-align: center;
+      }
+}
+
+/* Per dispositivi md (768px - 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .logo-img-absolute {
+        top: -15px; /* Posizione leggermente diversa rispetto a sm */
+    }
+
+    .logo-img {
+        max-width: 150px !important;
+        max-height: 150px !important; /* Dimensioni più grandi per md */
+    }
+}
+
+
+
+
+
+
